@@ -1,0 +1,46 @@
+{
+  "name": "api.sun.com",
+  "version": "1.0.0",
+  "description": "provide backend api for Sun e-commerce system.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "serve": "node ./index.js",
+    "lint": "eslint ./src",
+    "gene-fake-img": "python ./src/script/generateImg.py",
+    "gene-fake-data": "node ./src/script/generateData.js"
+  },
+  "author": "Dean",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "md5": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4"
+  },
+  "eslintConfig": {
+    "env": {
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "airbnb-base"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "rules": {
+      "import/prefer-default-export": "off",
+      "import/extensions": "off",
+      "no-plusplus": "off",
+      "no-param-reassign": "off",
+      "no-console": "off",
+      "no-unused-vars": "warn",
+      "no-empty-function": "warn"
+    }
+  }
+}

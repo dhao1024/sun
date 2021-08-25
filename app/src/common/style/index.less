@@ -1,0 +1,19 @@
+@import "./constants.less";
+
+#border(@width: 1px, @style: solid) {
+  border: @width @style #colors[border];
+}
+
+#flex-container() {
+  display: flex;
+  width: 100%;
+  background-color: #colors[white];
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+#font-strong() {
+  font-size: @font-size-large;
+  font-weight: bold;
+}
